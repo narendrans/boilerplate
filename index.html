@@ -1,72 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Boilerplate by narendrans</title>
+	<head>
+		<title>Responsive Application</title>
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+		<meta http-equiv="pragma" content="no-cache">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Boilerplate</h1>
-        <p class="header">Boiler plate code for creating single page web applications</p>
+		<link rel="stylesheet" href="css/base.css">
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/narendrans/boilerplate/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/narendrans/boilerplate/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/narendrans/boilerplate">View On GitHub</a></li>
-        </ul>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootswatch.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<!--[if IE 7]>
+		<link rel="stylesheet"  href="css/ie7.css">
+		<![endif]-->
+		<link rel="shortcut icon" href="images/favicon.ico">
 
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/narendrans">narendrans</a></p>
+	</head>
+	<style>
+		/* Hide the content intially and load it after document ready, see main.js*/
+		#content {
+			display: none;
+		}
+	</style>
+	<body>
+		<div id="wrap">
+			<!-- Menu start -->
+			<div id="menu" class="navbar navbar-default navbar-fixed-top" role="navigation" style="border-radius: 10px;margin:15px;">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Responsive Application</a>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="#" id="aboutbutton" data-target="#aboutModal">About</a>
+							</li>
+							<li>
+								<a href="#" id="helpbutton" data-target="#helpModal">Help</a>
+							</li>
+						</ul>
+					</div>
+					<!--/.nav-collapse -->
+				</div>
+			</div>
+			<!-- Menu end-->
+			<div class="container-fluid">
+				<!-- Content start -->
+				<div id="content">
+					<div class="page-header">
+						<h1>Page header goes here</h1>
+					</div>
 
+					<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true"></div>
 
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+					<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true"></div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+					<p>
+						<a href="../boiler.zip"> Download this sample </a>
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+						<h3>Table</h3>
+						<div class="table-responsive">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>First Name</th>
+										<th>Last Name</th>
+										<th>Username</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>Elon</td>
+										<td>Musk</td>
+										<td>@elonmusk</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>Steve</td>
+										<td>Wozniak</td>
+										<td>@stevewoz</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>Cristiano</td>
+										<td>Ronaldo</td>
+										<td>@Cristiano</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- Refer: http://fortawesome.github.io/Font-Awesome/icons/ -->
+						<h3>Icons</h3>
+						<a href="#" class="fa fa-facebook icon"></a>
+						<a href="#" class="fa fa-twitter icon"></a>
+						<a href="#" class="fa fa-linkedin icon"></a>
+						<a href="#" class="fa fa-apple icon"></a>
+						<a href="#" class="fa fa-android icon"></a>
+						<a href="#" class="fa fa-instagram icon"></a>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+						<h3>Buttons</h3>
+						<!-- Taken from boostrap example -->
+						<!-- Standard button -->
+						<button type="button" class="btn btn-default">
+							Default
+						</button>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+						<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+						<button type="button" class="btn btn-primary">
+							Primary
+						</button>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+						<!-- Indicates a successful or positive action -->
+						<button type="button" class="btn btn-success">
+							Success
+						</button>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+						<!-- Contextual button for informational alert messages -->
+						<button type="button" class="btn btn-info">
+							Info
+						</button>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+						<!-- Indicates caution should be taken with this action -->
+						<button type="button" class="btn btn-warning">
+							Warning
+						</button>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+						<!-- Indicates a dangerous or potentially negative action -->
+						<button type="button" class="btn btn-danger">
+							Danger
+						</button>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+						<div id="push"></div>
+				</div>
+				<!-- Content end -->
+				<!-- footer start -->
+				<div id="footer">
+					<div class="container">
+						<p class="text-muted">
+							&copy; 2014. Footer goes here.
+						</p>
+					</div>
+				</div>
+				<!-- footer end -->
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+				<!-- Javascript libraries -->
+				<script src="js/jquery.min.js"></script>
+				<script src="js/bootstrap.min.js"></script>
+				<script src="js/main.js"></script>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
-  </body>
+	</body>
+
 </html>

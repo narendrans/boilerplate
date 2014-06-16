@@ -1,0 +1,71 @@
+.icon {
+	font-size: 30px;
+}
+.icon:hover {
+	color: blue !important;
+	text-decoration: none !important;
+}
+p {
+	text-align: justify;
+}
+#menu {
+	border-radius: 10px;
+	margin: 15px;
+}
+.page-header {
+	margin: 80px 0 20px !important;
+}
+/* Sticky footer styles
+ -------------------------------------------------- */
+html, body {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+}
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto;
+	/* Negative indent footer by its height */
+	margin: 0 auto -60px;
+	/* Pad bottom by footer height */
+	padding: 0 0 60px;
+	height: 100%;
+}
+/* Set the fixed height of the footer here */
+#footer {
+	height: 60px;
+	background-color: #dd4814;/* #e7e7e7; */ /* if using default bootstrap css*/
+	border-radius: 10px;
+}
+#footer p {
+	color: white;
+	padding-left: 40%;
+}
+#push {
+	height: 30px;
+}
+/* Custom page CSS
+ -------------------------------------------------- */
+
+/* Not required for template or sticky footer method. */
+#wrap > .container {
+	padding: 60px 15px 0;
+}
+.container .text-muted {
+	margin: 20px 0;
+}
+#footer > .container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+textarea {
+	max-width: 80% !important;
+}
+.btn.dropdown-toggle.selectpicker.btn-default {
+	background-color: #dd4814;
+}
+.tooltip-inner {
+	/* If max-width does not work, try using width instead */
+	max-width: 550px !important;
+	overflow-x: visible;
+}
