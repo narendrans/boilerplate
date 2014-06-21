@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/bootswatch.css">
-<div class="content">
+<div class="content" style="padding:100px;">
 <h3>Drag the below bookmarklet to your bookmark toolbar!</h3>
     <a class="btn btn-primary" href="javascript: var a=prompt('Enter start time, end time (ex: 1:10,3:20)').split(',');var b,c;startMin=parseInt(a[0].split(':')[0]);startSec=parseInt(a[0].split(':')[1]);endMin=parseInt(a[1].split(':')[0]);endSec=parseInt(a[1].split(':')[1]);0!=startMin&&(b=60*startMin+startSec);elsestart=60+startSec;0!=endMin&&(c=60*endMin+endSec);elseend=60+endSec;window.open('http://youtube.googleapis.com/v/'+location.href.split('=')[1]+'?start='+b+'&end='+c+'&version=3&autoplay=1&modestBranding=1&rel=0&showinfo=0','_blank');">YoutTube Splicer</a>
 </div>
-<p></p>
+<br/><br/>
 <em><a href="https://github.com/narendrans/boilerplate/blob/gh-pages/youtube.html">Feel free to fork</a></em>
